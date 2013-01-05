@@ -47,14 +47,21 @@ $ git checkout experiment
 ##Find current branch
 $ git branch
 
-=================IMP
+############ IMP ##########
 
 Push an existing repository from the command line
+
+##Config remote repo(github)
 $ git remote add origin https://github.com/sajuptpm/pyr.git
+
+##Push changes to remote repo(github)
 $ git push -u origin master
 
 =================
 
+##Remove *pyc and *py~
+$ git rm -r *.pyc
+$ git rm -r *.py~
 
 -----------
 
