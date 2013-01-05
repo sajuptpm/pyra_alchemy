@@ -3,6 +3,9 @@
 # C extensions
 *.so
 
+#Adb SM
+*.*~
+
 # Packages
 *.egg
 *.egg-info
