@@ -1,0 +1,55 @@
+
+----------
+
+virtualenv --no-site-packages pyra_env
+
+----------
+
+cd pyra_env
+source bin/activate
+
+----------
+
+easy_install pyramid
+
+----------
+
+pcreate -s alchemy alchemy_proj
+
+----------
+
+cd alchemy_proj
+python setup.py develop
+
+----------
+
+Open development.ini and add following line
+sqlalchemy.url=mysql://root:convirt@localhost:3306/mydb1?charset=utf8
+
+Open models.py and replace 
+"name = Column(Text, unique=True)" with "name = Column(String(255), unique=True)"
+
+----------
+
+##Create Database
+initialize_alchemy_proj_db development.ini
+
+----------
+
+##Run Server
+pserve development.ini --reload
+
+----------
+
+http://127.0.0.1:6543
+
+----------
+
+
+----------
+
+
+----------
+
+
+----------
