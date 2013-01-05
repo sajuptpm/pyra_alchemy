@@ -1,0 +1,67 @@
+
+-----------
+
+$ git --version
+
+-----------
+
+$ git config --global user.name "Saju Madhavan"
+$ git config --global user.email "sajuptpm@gmail.com"
+
+-----------
+
+To check your configuration values, you can just run something like this
+$ git config user.name
+
+-----------
+
+$ cd alchemy_proj
+$ git init
+
+-----------
+
+$ git add .
+$ git commit -m 'initial commit'
+
+-----------
+
+$ git log
+
+-----------
+
+$ git status
+$ git diff
+$ git commit -m 'updated'
+
+-----------
+
+##Show all branches
+$ git branch
+
+##Create a branch
+$ git branch experiment
+
+##Switch to branch
+$ git checkout experiment
+
+##Find current branch
+$ git branch
+
+=================IMP
+
+Push an existing repository from the command line
+$ git remote add origin https://github.com/sajuptpm/pyr.git
+$ git push -u origin master
+
+=================
+
+
+-----------
+
+
+-----------
+
+
+-----------
+
+
